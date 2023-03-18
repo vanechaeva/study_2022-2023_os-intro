@@ -1,0 +1,120 @@
+---
+## Front matter
+title: "Лабораторная работа №4 по предмету Операционные системы"
+subtitle: "Группа НПМбв-02-19"
+author: "Нечаева Виктория Алексеевна"
+
+## Generic otions
+lang: ru-RU
+toc-title: "Содержание"
+
+## Bibliography
+bibliography: bib/cite.bib
+csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+
+## Pdf output format
+toc: true # Table of contents
+toc-depth: 2
+lof: true # List of figures
+lot: true # List of tables
+fontsize: 12pt
+linestretch: 1.5
+papersize: a4
+documentclass: scrreprt
+## I18n polyglossia
+polyglossia-lang:
+  name: russian
+polyglossia-otherlangs:
+  name: english
+## I18n babel
+babel-lang: russian
+babel-otherlangs: english
+## Fonts
+mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Sans
+monofont: PT Mono
+mainfontoptions: Ligatures=TeX
+romanfontoptions: Ligatures=TeX
+sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
+monofontoptions: Scale=MatchLowercase,Scale=0.9
+## Biblatex
+biblatex: true
+biblio-style: "gost-numeric"
+biblatexoptions:
+  - parentracker=true
+  - backend=biber
+  - hyperref=auto
+  - language=auto
+  - autolang=other*
+  - citestyle=gost-numeric
+## Pandoc-crossref LaTeX customization
+figureTitle: "Рис."
+tableTitle: "Таблица"
+listingTitle: "Листинг"
+lofTitle: "Список иллюстраций"
+lotTitle: "Список таблиц"
+lolTitle: "Листинги"
+## Misc options
+indent: true
+header-includes:
+  - \usepackage{indentfirst}
+  - \usepackage{float} # keep figures where there are in the text
+  - \floatplacement{figure}{H} # keep figures where there are in the text
+---
+
+# Цель работы
+
+Познакомиться с операционной системой Linux, получить практические навыки работы с консолью и некоторыми графическими менеджерами рабочих столов операционной системы.
+
+# Задание
+
+1. Ознакомиться с теоретическим материалом.
+2. Загрузить компьютер.
+3. Перейти на текстовую консоль. Сколько текстовых консолей доступно на вашем компьютере?
+4. Перемещаться между текстовыми консолями. Какие комбинации клавиш необходимо при этом нажимать?
+5. Зарегистрироваться в текстовой консоли операционной системы. Какой логин вы при этом использовали? Какие символы отображаются при вводе пароля?
+6. Завершить консольный сеанс. Какую команду или комбинацию клавиш необходимо для этого использовать?
+7. Переключиться на графический интерфейс. Какую комбинацию клавиш для этого необходимо нажать?
+8. Ознакомиться с менеджером рабочих столов. Как называется менеджер, запускаемый по умолчанию?
+9. Поочерёдно зарегистрироваться в разных графических менеджерах рабочих столов (GNOME, KDE, XFCE) и оконных менеджерах (Openbox). Продемонстрировать разницу между ними, сделав снимки экрана (скриншоты). Какие графические менеджеры установлены на вашем компьютере?
+10. Изучить список установленных программ. Обратить внимание на предпочтительные программы для разных применений. Запустите поочерёдно браузер, текстовой редактор, текстовой процессор, эмулятор консоли. Укажите названия программ.
+
+# Выполнение лабораторной работы
+Загружаю ОС на виртуальной машине. У меня это Ubuntu 22.04 на VirtualBox.
+
+## Текстовая консоль
+Перехожу на текстовую консоль. Всего их по умолчанию шесть, виртуальные консоли вызываются на ноутбуке с помощью клавиатурных сочетаний Ctrl + Alt + Fn + (F1 - F6), соответственно можно вызвать шесть текстовых консолей от tty1 до tty6. 
+
+У меня на tty1 открывается gdm -- дисплей-менеджер.
+
+На tty2 находится активный сейчас сеанс в выбранной  в дисплей-менеджере графической оболочке.
+
+Следовательно воспользоваться текстовыми консолями я могу на консолях tty3--tty6 (рис. 1, рис. 2, рис. 3, рис. 4):
+
+![Рисунок 1 - tty6](image/1.png)
+
+![Рисунок 2 - tty5](image/2.png)
+
+![Рисунок 3 - tty4](image/3.png)
+
+![Рисунок 4 - tty3](image/4.png)
+
+## Графический интерфейс
+
+## Графические менеджеры рабочих столов
+### GNOME (Ubuntu)
+### Xfce
+### KDE
+### Openbox
+
+
+
+# Выводы
+
+Здесь кратко описываются итоги проделанной работы.
+
+# Список литературы{.unnumbered}
+
+::: {#refs}
+:::
